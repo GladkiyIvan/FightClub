@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FightClub.Model;
 using RogueSharp.DiceNotation;
 
-namespace FightClub
+namespace FightClub.Model
 {
-    public class Actor
+    public delegate void FightStateHandler(object sender, FightEventArgs e);
+
+    public class Actor : IActor
     {
         public string Name { get; set; }
         public int HP { get; set; }
         public BodyParts TargetBlock { get; set; }
 
-        public delegate void FightStateHandler(object sender, FightEventArgs e);
 
         public event FightStateHandler Block;
         public event FightStateHandler Wound;
@@ -29,7 +31,7 @@ namespace FightClub
         {
             if (target == TargetBlock)
             {
-                OnBlock(new FightEventArgs($"{Name} заблокировал удар.", Name, HP));
+                Block?.Invoke(this, new FightEventArgs($"{Name} заблокировал удар.", Name, HP));
             }
             else
             {
@@ -38,11 +40,11 @@ namespace FightClub
                 if (HP <= 0)
                 {
                     HP = 0;
-                    OnDeath(new FightEventArgs($"Победил {Name}", Name, HP));
+                    Death?.Invoke(this, new FightEventArgs($"Победил {Name}", Name, HP));
                 }
                 else
                 {
-                    OnWound(new FightEventArgs($"{Name} получил ранение. У него осталось всего {HP} HP.", Name, HP));
+                    Wound?.Invoke(this, new FightEventArgs($"{Name} получил ранение. У него осталось всего {HP} HP.", Name, HP));
                 }
             }
         }
@@ -50,19 +52,6 @@ namespace FightClub
         public void SetBlock(BodyParts target)
         {
             TargetBlock = target;
-        }
-
-        protected void OnBlock(FightEventArgs e)
-        {
-            Block?.Invoke(this, e);
-        }
-        protected void OnWound(FightEventArgs e)
-        {
-            Wound?.Invoke(this, e);
-        }
-        protected void OnDeath(FightEventArgs e)
-        {
-            Death?.Invoke(this, e);
         }
     }
 }

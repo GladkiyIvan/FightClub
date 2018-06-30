@@ -13,3 +13,19 @@ C:\Users\Ivan\Desktop\FightClub\FightClub\FightClub\obj\Debug\FightClub.exe
 C:\Users\Ivan\Desktop\FightClub\FightClub\FightClub\obj\Debug\FightClub.pdb
 C:\Users\Ivan\Desktop\FightClub\FightClub\FightClub\obj\Debug\FightClub.NameInput.resources
 C:\Users\Ivan\Desktop\FightClub\FightClub\FightClub\obj\Debug\FightClub.WinLose.resources
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\bin\Debug\FightClub.exe.config
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\bin\Debug\FightClub.exe
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\bin\Debug\FightClub.pdb
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\bin\Debug\RogueSharp.dll
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\bin\Debug\RogueSharp.xml
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.NameInput.resources
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.Properties.Resources.resources
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.WinLose.resources
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.exe
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.pdb
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.ComputerScreen.resources
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.PlayerScreen.resources
+C:\Users\User\Desktop\Fight Club\FightClub\FightClub\FightClub\obj\Debug\FightClub.LogScreen.resources

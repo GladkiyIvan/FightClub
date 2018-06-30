@@ -74,7 +74,6 @@
             this.Controls.Add(this.input);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "NameInput";
             this.Text = "NameInput";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -48,33 +48,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actor.cs" />
-    <Compile Include="FightEventArgs.cs" />
-    <Compile Include="Main.cs">
+    <Compile Include="Model\Actor.cs" />
+    <Compile Include="Model\IActor.cs" />
+    <Compile Include="Presenter\Presenter.cs" />
+    <Compile Include="View\ComputerScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="View\ComputerScreen.Designer.cs">
+      <DependentUpon>ComputerScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="NameInput.cs">
+    <Compile Include="Model\FightEventArgs.cs" />
+    <Compile Include="View\IComputerScreen.cs" />
+    <Compile Include="View\ILogScreen.cs" />
+    <Compile Include="View\INameInput.cs" />
+    <Compile Include="View\IPlayerScreen.cs" />
+    <Compile Include="View\IWinLose.cs" />
+    <Compile Include="View\LogScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NameInput.Designer.cs">
+    <Compile Include="View\LogScreen.Designer.cs">
+      <DependentUpon>LogScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlayerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlayerScreen.Designer.cs">
+      <DependentUpon>PlayerScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NameInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NameInput.Designer.cs">
       <DependentUpon>NameInput.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BodyParts.cs" />
-    <Compile Include="WinLose.cs">
+    <Compile Include="Model\BodyParts.cs" />
+    <Compile Include="View\WinLose.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinLose.Designer.cs">
+    <Compile Include="View\WinLose.Designer.cs">
       <DependentUpon>WinLose.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="View\ComputerScreen.resx">
+      <DependentUpon>ComputerScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NameInput.resx">
+    <EmbeddedResource Include="View\LogScreen.resx">
+      <DependentUpon>LogScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlayerScreen.resx">
+      <DependentUpon>PlayerScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NameInput.resx">
       <DependentUpon>NameInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -86,7 +111,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="WinLose.resx">
+    <EmbeddedResource Include="View\WinLose.resx">
       <DependentUpon>WinLose.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
